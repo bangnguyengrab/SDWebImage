@@ -36,7 +36,8 @@ let package = Package(
             cSettings: [
                 .headerSearchPath("Core"),
                 .headerSearchPath("Private")
-            ]
+            ],
+            swiftSettings: [.unsafeFlags(["-enable-library-evolution"])]
         ),
         .target(
             name: "SDWebImageMapKit",
